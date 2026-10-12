@@ -12,9 +12,9 @@ from scipy.spatial import cKDTree
 
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 
 WINDOW, STARTS = 96, 8
@@ -579,7 +579,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -592,7 +592,7 @@ Test: redovi 4635..4698
 SCHWINGER V5 QUANTUM FIELD THEORY: prosek=1.3750; pogodaka 0..7=[14, 23, 17, 9, 1, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 24,25,26,27,30,38,39
+SLEDECI RED 4699: 24,x,26,y,30,z,39
 Skor=1.5560880051; iteracija=15; vec postoji u istoriji=False
 Empirijska podrska: L1 poluprecnik=2.800000; kvantil=.75
 Proveren lokalni maksimum dozvoljenih zamena; globalni maksimum nije potvrden.
@@ -600,7 +600,7 @@ Funkcional izvora je strukturna analogija; skor nije verovatnoca dobitka.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -613,7 +613,7 @@ Test: redovi 2908..2971
 SCHWINGER V5 QUANTUM FIELD THEORY: prosek=1.4219; pogodaka 0..7=[10, 26, 19, 9, 0, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 1,7,8,11,16,29,35
+SLEDECI RED 2972: 1,x,8,y,16,z,35
 Skor=0.8985548564; iteracija=18; vec postoji u istoriji=False
 Empirijska podrska: L1 poluprecnik=2.800000; kvantil=.75
 Proveren lokalni maksimum dozvoljenih zamena; globalni maksimum nije potvrden.
@@ -621,7 +621,7 @@ Funkcional izvora je strukturna analogija; skor nije verovatnoca dobitka.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -634,7 +634,7 @@ Test: redovi 1664..1727
 SCHWINGER V5 QUANTUM FIELD THEORY: prosek=1.2188; pogodaka 0..7=[12, 32, 14, 6, 0, 0, 0, 0]
 Kontrola: prethodno izvuceno kolo: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 5,26,29,30,34,35,36
+SLEDECI RED 1728: 5,x,29,y,34,z,36
 Skor=1.5179180657; iteracija=21; vec postoji u istoriji=False
 Empirijska podrska: L1 poluprecnik=3.200000; kvantil=.75
 Proveren lokalni maksimum dozvoljenih zamena; globalni maksimum nije potvrden.
@@ -651,9 +651,9 @@ V5 računa funkcional izvora iz stvarnih strukturnih prelaza i izdvaja povezane 
 V5 quantum field theory je završena i proverena na sva tri CSV fajla. Koristi funkcional izvora i povezane korelacije za rangiranje celih prelaza — strukturnu primenu ideje iz Schwingerovog rada The Theory of Quantized Fields IV.
 
 CSV	        Sledeća kombinacija	    Prosek pogodaka na 64 kola	Kontrola: prethodno izvučeno kolo
-Objedinjeni	24,25,26,27,30,38,39	1,3750	                    1,2188
-Loto	    1,7,8,11,16,29,35	    1,4219	                    1,2969
-Loto Plus	5,26,29,30,34,35,36	    1,2188	                    1,2969
+Objedinjeni	24,x,26,y,30,z,39	    1,3750	                    1,2188
+Loto	    1,x,8,y,16,z,35	        1,4219	                    1,2969
+Loto Plus	5,x,29,y,34,z,36	    1,2188	                    1,2969
 
 Provereni su funkcional, povezane korelacije, hronologija, ponovljivost i lokalni maksimum dozvoljenih zamena. Globalni maksimum nije potvrđen.
 """
